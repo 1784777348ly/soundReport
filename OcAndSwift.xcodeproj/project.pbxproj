@@ -176,8 +176,7 @@
 				CDB92D102233660900AD4B3B /* Sources */,
 				CDB92D112233660900AD4B3B /* Frameworks */,
 				CDB92D122233660900AD4B3B /* Resources */,
-				531C0EDE39B573E63F18E7A3 /* [CP] Embed Pods Frameworks */,
-				4A7A15EC376F4AD909A7CA6B /* [CP] Copy Pods Resources */,
+				7108A6C486AAB33D55920AC7 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -272,37 +271,21 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		4A7A15EC376F4AD909A7CA6B /* [CP] Copy Pods Resources */ = {
+		7108A6C486AAB33D55920AC7 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OcAndSwift/Pods-OcAndSwift-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		531C0EDE39B573E63F18E7A3 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-OcAndSwift/Pods-OcAndSwift-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-OcAndSwift/Pods-OcAndSwift-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-OcAndSwift/Pods-OcAndSwift-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OcAndSwift/Pods-OcAndSwift-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-OcAndSwift/Pods-OcAndSwift-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */

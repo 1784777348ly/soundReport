@@ -27,9 +27,9 @@ class SwiftViewController: UIViewController {
         
         print(b1);
         
-        let c = String(stringInterpolationSegment:a)
+//         let c = String(stringInterpolationSegment:a)
         
-        print(c);
+//        print(c);
         
         
         
